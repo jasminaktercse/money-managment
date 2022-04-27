@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Management</title>
+    <link rel="stylesheet" href="style.css">
+    
+   
+
+</head>
+<body>
+    <!-- Title -->
+    <h1 class="title">Money Management</h1>
+
+     <!-- Calculating  -->
+    <section class="flexible-area">
+
+        <!-- Image -->
+        <div class="half-width">
+               <img src="./images/money.jfif" alt="">
+        </div>
+        <!-- Money Calculating Area -->
+        <div  class="half-width money-area">
+
+            <!-- Error handal -->
+            <p id="set-error"></p>
+
+            <h3>Income</h3>
+            <label>Income: </label>
+            <input type="number" id="income-input"><br>
+            <!-- Expenses -->
+            <h3>Expenses</h3>
+            <label>Food</label>
+            <input type="number" id="food-input"><br>
+            <label>Rent:</label>
+            <input type="number" id="rent-input"><br>
+            <label>Clothes : </label>
+            <input type="number" id="clothes-input"><br><br>
+            
+            <!-- Calculate -->
+            <button class="submit-button" id="calculate-button">Calculate</button>
+
+
+            <h3>Total Expenses : <span id="total-expenses"></span></h3>
+            <h3>Balance : <span id="balance"></span></h3>
+            <div>
+                <label>Save: </label>
+                <input type="number" id="persentage-input" > <span>%</span>
+                <!-- Saveings Calculate -->
+                <button class="submit-button" id="save-button">Save</button>
+            </div>
+            <h3>Saving Amount : <span id="saving-amount"></span></h3>
+            <h3>Remaining Balance : <span id="reamaining-balance"></span></h3>
+        </div>
+
+    </section>
+    
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("contextmenu", function(event){
+        event.preventDefault(); 
+        }, false);
+    </script>
+</body>
+</html>
